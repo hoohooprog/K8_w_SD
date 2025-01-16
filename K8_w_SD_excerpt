@@ -1,0 +1,37 @@
+# motivations:
+# to minimally gain experience scaling compute securely 
+# so as not to leave idle or increase costs unnecessary 
+# after use or downtime for self and users.
+# setting up using Gu's article or other similar articles
+# geared towards cloud orchestrating AI would 
+# progress me towards hosting my own services for 
+# OpenCollective media translation and collaboration 
+# (website, whisper, mistral openWebUI)
+# 
+# additional benefits include
+# 1) LoRA for training SD on personal images
+# which can optionally help in Collective Expression project
+# since optimally we want expressions to be trained on other platforms
+# 2) we can try the open webUI version that will get us 1st steps for
+# media learning, and then for our own cloud version (uses gradio instead of svelte)
+
+# sources
+# LoRA
+# https://www.shruggingface.com/blog/self-portraits-with-stable-diffusion-and-lora
+# https://www.linkedin.com/pulse/create-ai-model-your-face-have-fun-stable-diffusion-guillaume-lain%C3%A9
+# https://arstechnica.com/gadgets/2023/03/making-faces-how-to-train-an-ai-on-your-face-to-create-silly-portraits/
+# more at img gen mobile bookmarks
+
+
+# checklist:
+# 1) access aws cloud
+# 2) check victor gu repo and source
+# 3) spin up orchestration and stable diffusion 
+# 4) refer to docs, cgpt n files to try different compute arch. exercises
+
+
+# make sure:
+# 1) to close or lower cloud compute n orchestration effectively
+# after use to lower costs
+
+# 2) access is secure yet scalable (ingress-nginx)
