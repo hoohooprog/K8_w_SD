@@ -86,3 +86,10 @@ aws eks
 opened some tabs in laptop, hoping for clearer instructions where n how to reference
 tf files for k8s
 
+day end review 1148
+found some youtube videos like this 
+https://www.youtube.com/watch?v=_BTpd2oYafM&t=1412s
+
+that explains how to approach executing k8s with terraform
+looking back, maybe it would've been more efficient if I had started with not just the official docs
+but also how people actually write terraform for eks.
