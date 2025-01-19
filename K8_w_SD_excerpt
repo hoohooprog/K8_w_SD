@@ -35,3 +35,39 @@
 # after use to lower costs
 
 # 2) access is secure yet scalable (ingress-nginx)
+
+1/19/25 1130-1305
+
+what i did:
+  getting familar with vic gu's deployment by using the following aws cloudshell, terraform and helm links:
+  # terraaform tutorial on basic concepts and next steps
+  https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build
+  # dl, ul, file into s3 bucket
+  https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html#home-directory-backup
+  https://registry.terraform.io/providers/hashicorp/aws/2.43.0/docs
+
+
+for going through setting up git in aws cloudshell
+  https://catalog.us-east-1.prod.workshops.aws/workshops/65a1d035-05db-4d86-9ca5-21d9dbca2b8d/en-US
+and more labs like this, camps eg infrastructure.
+  https://community.aws/students
+
+
+unsure whether I need to install aws CLI if i'm using my laptop locally.
+
+would prefer local to aws cloud shell because 
+  1) i don't just want to deploy the orchestration
+  2) i want to read, understand and comment on the codes in the respective/essential files
+  3) I may need to modify param values to my requirements (eg amazon zone etc).
+or
+  1) I can link my github account to cloudshell
+  2) I can use vim on aws cloudshell
+  3) I can then edit and edit and commit to my own git account that can be reflected on cloudshell home dir.
+
+next steps: 
+  1) set up git in aws cloudshell
+  2) further inspect, understand, comment why, how and where Vic Gu wrote his tf and find his sources.
+  3) continue to spin up SD orchestration
+  - review and make flashcards of important functions, concepts or repeatable processes.
+
+1405
