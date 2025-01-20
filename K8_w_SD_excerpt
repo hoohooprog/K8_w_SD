@@ -93,3 +93,30 @@ https://www.youtube.com/watch?v=_BTpd2oYafM&t=1412s
 that explains how to approach executing k8s with terraform
 looking back, maybe it would've been more efficient if I had started with not just the official docs
 but also how people actually write terraform for eks.
+
+1345-1505 (1h20)
+was searching for the list of params like these
+  manage_default_network_acl    = false
+  manage_default_route_table    = false
+  manage_default_security_group = false
+at the wrong places
+
+did not find in eks and did not find in older version of vpc
+did not check for version but it is in the latest ver. of vpc
+
+-1525
+while also try to find again as complete of vic gu's code origin, inspiration and expansion
+by looking at doEKS, according to his explanation. 
+
+I found the modules to be closer to his code, except maybe for syntax
+ie 
+  manage_default_network_acl = true
+  default_network_acl_tags   = { Name = "${local.cluster_name}-default" }
+in 
+  https://github.com/awslabs/data-on-eks/blob/main/schedulers/terraform/aws-batch-eks/vpc.tf
+
+anyways, would need to find best practices for eks terraform 
+also
+follow and notate v gu's code to understand the reasons behind his execution 
+and how to perform them.
+-1534
