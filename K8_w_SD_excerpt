@@ -120,3 +120,23 @@ also
 follow and notate v gu's code to understand the reasons behind his execution 
 and how to perform them.
 -1534
+
+-1544
+white papers for further reading 
+
+on k8s security
+https://docs.aws.amazon.com/eks/latest/best-practices/security.html#further-reading
+https://aws.github.io/aws-eks-best-practices/security/docs/iam/
+latest ver but no breakdown unlike above layout
+https://docs.aws.amazon.com/eks/latest/best-practices/identity-and-access-management.html#_cluster_access_recommendations
+
+list of other security topics
+https://catalog.workshops.aws/eks-security-immersionday/en-US
+
+best practices for codebase, backend, security
+https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/terraform-aws-provider-best-practices/terraform-aws-provider-best-practices.pdf
+
+follow above section on "Understanding dependencies".. create file that expands tree on module's dependencies and nested modules and 
+data sources, versioning
+to be clear of what is used and what could be modified
+1605 (2h 20min)
