@@ -201,6 +201,8 @@ https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/terraform-aws-prov
 
 also, found a article that shows architecture diagramming very well, could complement RE vic gu's setup.
 
+cgpt answer to resources n sources, which could be irrelevant since we conform to module source code n how to understand module
+https://chatgpt.com/c/679559dc-aa14-8013-89ba-c4d60fa37d03
 
 
 
