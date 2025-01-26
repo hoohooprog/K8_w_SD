@@ -115,6 +115,7 @@ ie
 in 
   https://github.com/awslabs/data-on-eks/blob/main/schedulers/terraform/aws-batch-eks/vpc.tf
 
+
 anyways, would need to find best practices for eks terraform 
 also
 follow and notate v gu's code to understand the reasons behind his execution 
@@ -148,3 +149,58 @@ want to know more on scaling n security. well simple said than what they encompa
 n then tweak the template from there.
 
 may need to adjust my expectations n executions along the way.
+
+sat jan 26, 2025
+0116
+
+spent some time getting back into terraform.
+I decide maybe it would be easier to do everything via VPC console. Maybe there's even security too.
+Because it's easier to touch ground on the knowledge of deploying without getting into terraform
+which is an abstraction for variations on configs
+
+Nevertheless, I can see I can spend some time to get back to terraform too by referring to 
+terraform module source code, aws docs, terraform docs.. also as mentioned in CGPT.
+
+For eg, to reference the source of module.vpc.private_route_table_ids, 
+we can go to main.tf or output.tf of vpc module
+https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest?tab=outputs
+https://github.com/terraform-aws-modules/terraform-aws-vpc/blob/master/main.tf
+
+the unstructured module for complete can be found here:
+https://github.com/terraform-aws-modules/terraform-aws-vpc/blob/master/examples/complete/main.tf
+
+-------
+
+To reverse engineer vic's process or the template he's altering, 
+we know the terraform is a reflection of the requirements for deployment on AWS console.
+The console can show what's required and also provide information.
+
+most important, I can read about the services he uses and even sketch out the deeper
+technical arch. from what he implements and what he wrote.
+
+It would be important to understand the fundamental concepts of what are being used
+
+For eg, what are the uses of vpc endpoints and what variations are there? and how would I implement
+them (for S3)? what conditions can be specified (for S3)?
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html
+
+https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#create-interface-endpoint-aws
+https://docs.aws.amazon.com/vpc/latest/privatelink/concepts.html
+https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html
+https://docs.aws.amazon.com/AmazonECR/latest/userguide/vpc-endpoints.html
+
+so why I need to use each var. in vpc endpt for Gu's article can be found here
+https://github.com/terraform-aws-modules/terraform-aws-vpc/blob/v5.17.0/modules/vpc-endpoints/main.tf
+
+more on such internal services provided by aws as a direct resource transfer privately via their network
+called privatelink access
+https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-access-aws-services.html
+
+best practices for terraform aws
+https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/terraform-aws-provider-best-practices/terraform-aws-provider-best-practices.pdf
+
+also, found a article that shows architecture diagramming very well, could complement RE vic gu's setup.
+
+
+
+
