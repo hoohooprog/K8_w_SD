@@ -206,3 +206,36 @@ https://chatgpt.com/c/679559dc-aa14-8013-89ba-c4d60fa37d03
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+weds 29 Jan 2025
+1322
+
+Yesterday created another file called "cloud_iteration.py" that is for helping me to understand cloud deployment from 
+a practical perspective, starting from running ec2 and adding vLLM and then downloading mistral to cloud dir
+and then downloading more models, changing models to test.. before perhaps adding
+an official API gateway for a public facing, personal UI (think OpenWebUI)
+then load balancing, FastAPI on EKS for prod public scale.
+
+also was curious about how vLLM gets the weights from HF and where in the code shows that. HF has good docs
+on AI models.
+
+
