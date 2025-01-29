@@ -17,8 +17,9 @@
 # misc: 
 # - eksctl delete cluster my-demo-cluster --region us-east-1 by mudasir - setup k8s cluster on EKS (shows how to create cluster n node)
 # - self-host llama 3.1 88B in EC2 using VLLM and Docker by Mohamed Amri show good example of setup by console
-# - "If you already have the model artifacts on your infrastructure you can use them directly by pointing vLLM to their local path instead of a Hugging Face model ID. 
-# -  In this scenario you will be able to skip all Hugging Face related setup steps."
+# - "If you already have the model artifacts on your infrastructure you can use them directly by pointing vLLM to their local path 
+#    instead of a Hugging Face model ID. 
+#    In this scenario you will be able to skip all Hugging Face related setup steps."
 #   https://docs.mistral.ai/deployment/self-deployment/vllm/
 # - also see prod metrics and distributed inference and serving on vLLM official docs
 
@@ -28,12 +29,20 @@
 # so I need to download vLLM and mistral to cloud via SSH, if not from HF, and point to the mistral path like this LLM("/mistral/path")
 
 ##### conclusion #####
-##  follow nlpcloud first
-##  check ssh from chinmay
-##  download mistral and vllm (nlpcloud)
-##  point to directory and test generation
-##  terminate EC2 isntance (or eksctl delete cluster)
+##  algo:
+##  1) follow nlpcloud first
+##  2) check ssh from chinmay
+##  3) download mistral and vllm (nlpcloud)
+##  4) point to directory and test generation
+##  5) terminate EC2 isntance (or eksctl delete cluster)
 ##
 ##  so we would've learnt to configure ec, install vLLM and OS model for personal usage 
-##  then we will understand better how to scale better for prod using EKS, Load Balancers and FastAPI
+##  then we will understand better how to scale better for prod using EKS (from console->CLI/SSH?), Load Balancers and FastAPI
 ##  (see other tutorials like vic Gu's for arch and add. (AWS) services, articles that uses eks console eg mudasir, to aws workshop schema)
+
+## our app will probably end up like Gu and aws workshop schema, where the entry(endpoints) would be the UIs such as login, transcript and translate page
+## for the AI apps to process and return the data to the appropriate features on certain pages, such as the page with embedded utube vid with overlayed subs.
+#####
+# It would be similar to reinventing the internet/WWW, creating my own personal network and allowing specific communication from different categories of people
+###
+
