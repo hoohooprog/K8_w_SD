@@ -1,0 +1,18 @@
+source: https://nlpcloud.com/deploy-mistral-7b-on-a10-gpu-on-aws.html
+
+background:
+- Mistral7b requires at least 15GB of VRAM, so we need at least 1xA10GPU
+- 1xA10GPU = 25GB of virtual mem.
+- in Amazon, g5.xlarge instance uses 
+
+
+algo:
+1) goto aws management console
+2) goto EC2 dashboard
+3) click `launch instance`
+4) choose ubuntu server
+5) select `deep learning ami gpu pytorch` preferred version/release date
+6) why not x1? because 7b needs at least 14GB of staging mem, may be tight, so maybe x2?
+7) g5x2 has 32gb ram instead of 16gb ram of g5x1, so I selected this to try
+8) write name `mistral_g5x2_RAM16GB_A10GPU_24GB
+9) 
