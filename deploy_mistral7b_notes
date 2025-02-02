@@ -2,7 +2,7 @@ source: https://nlpcloud.com/deploy-mistral-7b-on-a10-gpu-on-aws.html
 
 background:
 - Mistral7b requires at least 15GB of VRAM, so we need at least 1xA10GPU
-- 1xA10GPU = 25GB of virtual mem.
+- 1xA10GPU = edit: 24gb of GPU
 - in Amazon, g5.xlarge instance uses 
 
 
