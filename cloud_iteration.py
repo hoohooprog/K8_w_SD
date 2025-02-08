@@ -46,3 +46,16 @@
 # It would be similar to reinventing the internet/WWW, creating my own personal network and allowing specific communication from different categories of people
 ###
 
+##############################################
+###############################################
+## 8 feb, 2025, Sat
+##########################
+#
+# from 0900 - 1330
+# reviewed materials accrued to be implemented and wrote in slides "Mistral on aws"
+# if all goes well, we need to open an S3 or EBS monthly to store model, script
+# to be loaded on ec2 instance. 
+#
+# need to link to web openUI if I want to access via web interface.
+#
+# 
