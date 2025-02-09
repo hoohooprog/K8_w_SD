@@ -1,4 +1,4 @@
-###
+ok###
 #
 # 28 jan 2025 afternoon, i have some ideas and links
 # to iterate, to mostly use AWS console
@@ -90,7 +90,9 @@
 
 # other important features would include:
 #		- chat questions and answers based on media previously questioned by other users
-#		( requires caching, DB, multi lingual support , going into open webUI code )
+#		( requires caching, DB, multi lingual support , going into open webUI code 
+#		 RAG top comments/answers, if not prompt user "sorry non top prompts or comments are
+# 		 not updated, please specify the prompt and then your comments" )
 #		- like and comment system
 #		- categorizing and only featuring types of comments that user wants to see
 #
