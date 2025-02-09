@@ -59,3 +59,47 @@
 # need to link to web openUI if I want to access via web interface.
 #
 # 
+###########################
+### 9 Feb 2025, Sun
+###############
+###
+# 1554
+# sth felt wrong, that I have to go thru many hoops to even access IP
+# to use AI, which isn't the point of cloud usage
+
+# I should be able to enter an IP that shows open webUI to access a chat model
+# and then have some sort of service that starts the server and run the apps
+# when pinged
+
+# for eg I should be able to easily spin up an instance like this eg with
+# open webui n ollama, switching out ollama w/ vllm
+# # #https://www.linkedin.com/pulse/step-by-step-launching-ollama-server-web-ui-amazon-ec2-emesoft
+# -jsc-0oc6c
+
+# since a local server works the same as the cloud server, here are the scripts to vllm
+# http://varnitkhanna.com/notes/open-webui-local-vllm-model/
+
+# from this CGPT chat https://chatgpt.com/c/67a8c887-3254-8013-866b-3ce0b0aefd07
+# we can minimally spin up a open webUI and Mistral instruct chatbot
+# and set up conditions to spin down
+#
+# then we can connect other services like YouTube transcription and translation 
+# in its own container and share data to the container of Mistral chat.
+# from that instance, to support multi users, we would use k8s to orchestrate
+# clusters of node instances
+
+# other important features would include:
+#		- chat questions and answers based on media previously questioned by other users
+#		( requires caching, DB, multi lingual support )
+#		- like and comment system
+#		- categorizing and only featuring types of comments that user wants to see
+#
+#	1738
+
+# with better understanding of this, I can also setup stable diffusion n experiment
+# LoRA n increase capabilities of existing models.. 
+
+# while adding of other features would enable me to get experience hosting large
+# numbers of users 
+# 1747
+###
