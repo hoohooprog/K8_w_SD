@@ -90,7 +90,7 @@
 
 # other important features would include:
 #		- chat questions and answers based on media previously questioned by other users
-#		( requires caching, DB, multi lingual support )
+#		( requires caching, DB, multi lingual support , going into open webUI code )
 #		- like and comment system
 #		- categorizing and only featuring types of comments that user wants to see
 #
