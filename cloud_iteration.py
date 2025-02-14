@@ -82,6 +82,9 @@ ok###
 # from this CGPT chat https://chatgpt.com/c/67a8c887-3254-8013-866b-3ce0b0aefd07
 # we can minimally spin up a open webUI and Mistral instruct chatbot
 # and set up conditions to spin down
+
+# should i automate termination of instance instead of just stopping? how? 
+# lambda eg in cgpt?
 #
 # then we can connect other services like YouTube transcription and translation 
 # in its own container and share data to the container of Mistral chat.
