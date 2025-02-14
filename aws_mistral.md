@@ -82,6 +82,7 @@ modify file if running without docker, eg writing yaml
 
 1. under mistral-ai tutorials: (https://github.com/mistralai/mistral-inference/blob/main/tutorials/getting_started.ipynb) \
    (https://colab.research.google.com/github/mistralai/mistral-inference/blob/main/tutorials/getting_started.ipynb)
+   from how to run (https://docs.mistral.ai/getting-started/models/weights/#how-to-run)
 or
 3. via HF
 (https://chatgpt.com/c/67a8c887-3254-8013-866b-3ce0b0aefd07)
