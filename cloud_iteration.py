@@ -73,8 +73,7 @@ ok###
 
 # for eg I should be able to easily spin up an instance like this eg with
 # open webui n ollama, switching out ollama w/ vllm
-# # #https://www.linkedin.com/pulse/step-by-step-launching-ollama-server-web-ui-amazon-ec2-emesoft
-# -jsc-0oc6c
+# https://www.linkedin.com/pulse/step-by-step-launching-ollama-server-web-ui-amazon-ec2-emesoft-jsc-0oc6c
 
 # since a local server works the same as the cloud server, here are the scripts to vllm
 # http://varnitkhanna.com/notes/open-webui-local-vllm-model/
