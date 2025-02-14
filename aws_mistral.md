@@ -80,9 +80,10 @@ modify file if running without docker, eg writing yaml
 
 ## STEP GET MISTRAL INSTRUCT AND INFER
 
-1. under mistral-ai tutorials: (https://github.com/mistralai/mistral-inference/blob/main/tutorials/getting_started.ipynb)
+1. under mistral-ai tutorials: (https://github.com/mistralai/mistral-inference/blob/main/tutorials/getting_started.ipynb) \
+   (https://colab.research.google.com/github/mistralai/mistral-inference/blob/main/tutorials/getting_started.ipynb)
 or
-2. via HF
+3. via HF
 (https://chatgpt.com/c/67a8c887-3254-8013-866b-3ce0b0aefd07)
 ```
   git lfs install
