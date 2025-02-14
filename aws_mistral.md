@@ -88,9 +88,9 @@ or
   git lfs install
   git clone https://huggingface.co/mistralai/Mistral-7B-v0.1 ~/models/mistral-7b
 ```
-## more ideas in case of multiple version, delete to save space
-## https://stackoverflow.com/questions/67595500/how-to-download-a-model-from-huggingface
-## https://www.youtube.com/watch?v=1lC0GQtAz1s
-## HF transformer main page also shows git clone transfomer w/o need of account
+more ideas in case of multiple version, delete to save space
+(https://stackoverflow.com/questions/67595500/how-to-download-a-model-from-huggingface)
+(https://www.youtube.com/watch?v=1lC0GQtAz1s)
+HF transformer main page also shows git clone transfomer w/o need of account
 
 
