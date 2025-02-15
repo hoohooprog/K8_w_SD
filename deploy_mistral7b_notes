@@ -16,3 +16,10 @@ algo:
 7) g5x2 has 32gb ram instead of 16gb ram of g5x1, so I selected this to try
 8) write name `mistral_g5x2_RAM16GB_A10GPU_24GB
 9) 
+
+15 feb 2025
+https://github.com/open-webui/open-webui/tree/main/kubernetes/manifest/base
+https://github.com/vllm-project/vllm/blob/367cb8ce8c0486e22941cf8990902fc5ec992ec1/docs/source/deployment/k8s.md
+
+we have some sources for k8s thanks to CGPT. But CGPT does it differently. Maybe I should start executing soon
+So I can have a sandbox to keep modifying and layering on, such as security etc.
