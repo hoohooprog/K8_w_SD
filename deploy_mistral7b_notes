@@ -23,3 +23,8 @@ https://github.com/vllm-project/vllm/blob/367cb8ce8c0486e22941cf8990902fc5ec992e
 
 we have some sources for k8s thanks to CGPT. But CGPT does it differently. Maybe I should start executing soon
 So I can have a sandbox to keep modifying and layering on, such as security etc.
+
+2210
+my intuition is, Open WebUI could be mainly svelte, hence JS/static file, and these are sent to users.
+CDN etc, 
+hence the real part that has to scale would be vLLM-Mistral, which is called by the Open WebUI service.
