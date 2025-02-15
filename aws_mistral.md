@@ -2,7 +2,92 @@
 [Go to RUN OPEN WEBUI IN EC2](#run-open-webui-in-ec2) \
 [Go to STEP INITIALIZE AWS INSTANCE](#STEP-INITIALIZE-AWS-INSTANCE) \
 
+## vLLM Deployment (Private, Only Accessible by Open WebUI)
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vllm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vllm
+  template:
+    metadata:
+      labels:
+        app: vllm
+    spec:
+      containers:
+      - name: vllm
+        image: vllm/vllm-openai:latest
+        args:
+          - "--model"
+          - "/models/mistral-7B"
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+        volumeMounts:
+          - name: model-storage
+            mountPath: /models
+      volumes:
+        - name: model-storage
+          hostPath:
+            path: /models
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vllm-service
+spec:
+  selector:
+    app: vllm
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+  type: ClusterIP  # ❗ This keeps vLLM private within the cluster
 
+```
+
+## Open WebUI yaml Deployment (Publicly Accessible, Talks to vLLM Internally)
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: openwebui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: openwebui
+  template:
+    metadata:
+      labels:
+        app: openwebui
+    spec:
+      containers:
+      - name: openwebui
+        image: open-webui/open-webui:latest
+        env:
+          - name: OLLAMA_BASE_URL
+            value: "http://vllm-service:8000"  # ❗ Connect to vLLM inside cluster
+        ports:
+          - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: openwebui-service
+spec:
+  selector:
+    app: openwebui
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer  # ❗ Exposes Open WebUI to external users or Ingress
+```
 
 ## STEP INITIALIZE AWS INSTANCE 
 
