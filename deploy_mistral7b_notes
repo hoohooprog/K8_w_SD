@@ -28,3 +28,8 @@ So I can have a sandbox to keep modifying and layering on, such as security etc.
 my intuition is, Open WebUI could be mainly svelte, hence JS/static file, and these are sent to users.
 CDN etc, 
 hence the real part that has to scale would be vLLM-Mistral, which is called by the Open WebUI service.
+
+2216
+
+So i Went thru EKS workshop on autoscaling, and verified the fact that EKS can be configured to autoscale nodes also
+However, I would want scaling Open WebUI based on traffic latency ie LoadBalancing while vLLM on Compute.
