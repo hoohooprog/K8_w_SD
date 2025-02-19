@@ -53,5 +53,8 @@ However, I would want scaling Open WebUI based on traffic latency ie LoadBalanci
 
   Hence 1 way of building would be to start from the core services, test them for traffic handling capabilities,
   and then open doors to public. Well, it's easier to evolve any platform on the web anyways.
-  
-  
+
+## 19 feb 2025, 1105
+we will have to review CGPT to understand the intuition and application
+of traffic routing thru ports again. 
+Also connecting these ideas to setting up EKS infra. how exactly is the script or algo to set up an EKS cluster?
