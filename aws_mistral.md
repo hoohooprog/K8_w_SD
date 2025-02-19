@@ -2,6 +2,19 @@
 [Go to RUN OPEN WEBUI IN EC2](#run-open-webui-in-ec2) \
 [Go to STEP INITIALIZE AWS INSTANCE](#STEP-INITIALIZE-AWS-INSTANCE) \
 
+## Initialize AWS Instance and cluster
+### Create an EKS Cluster using eksctl
+```
+eksctl create cluster --name openwebui-cluster --region us-east-1 \
+  --nodegroup-name standard-workers \
+  --node-type t3.medium \
+  --nodes 2 \
+  --nodes-min 2 \
+  --nodes-max 5 \
+  --managed
+
+```
+
 ## vLLM Deployment (Private, Only Accessible by Open WebUI)
 ```
 apiVersion: apps/v1
